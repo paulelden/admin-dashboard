@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 2px solid red;
 }
 
 body {
@@ -20,4 +21,29 @@ body {
 
 /* CLASSES */
 
+
+
 /* IDs */
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#sidebar {
+    grid-column: 1/1;
+    grid-row: 1/-1;
+}
+
+#header {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+
+#content {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
