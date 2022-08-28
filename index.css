@@ -28,7 +28,7 @@ body {
 }
 
 p {
-    font-size: calc(12px + 1vw);
+    font-size: calc(10px + 1vw);
     font-weight: 500;
     text-align: center;
 }
@@ -45,24 +45,23 @@ a {
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
-    width: 12vw;
-    max-width: 250px;
-    height: 5vh;
-    color: white;
-    background-color: #14591D;
-    border: solid black 3px;
-    font-size: calc(10px + 0.8vw);
+    width: 10vw;
+    height: 4vh;
+    color: black;
+    background: var(--paneColor);
+    border: none;
+    font-size: calc(8px + 0.8vw);
     font-family: var(--fontMain), sans-serif;
     font-weight: 500;
 }
 
 .headerButton:hover {
-
+    background-color: rgb(120, 206, 150);
 }
 
 .headerButton > img {
-    width: 1.8vw;
-    height: 1.8vw;
+    width: 1.5vw;
+    height: 1.5vw;
 }
 
 /* IDs */
@@ -71,8 +70,8 @@ a {
     height: 98vh;
     width: 99vw;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 8fr;
     gap: 10px;
 }
 
@@ -152,7 +151,7 @@ a {
 }
 
 #minusCircle {
-    width: 40px;
+    width: 40px;n
     height: 40px;
 }
 
@@ -217,7 +216,7 @@ a {
     justify-content: right;
     justify-self: right;
     gap: 2vw;
-    padding-right: 10px;
+    margin-right: 75px;
     width: 15vw;
 }
 
@@ -243,8 +242,10 @@ a {
     background-color: var(--main-color);
     border: solid black 4px;
     border-radius: 100%;
-    height: 4vw;
-    width: 4vw;
+    height: 3vw;
+    width: 3vw;
+    min-width: 50px;
+    min-height: 50px;
 }
 
 #searchForm {
@@ -287,14 +288,29 @@ a {
 #headerButtonsContainer {
     display: flex;
     align-items: center;
-    justify-content: left;
-    justify-self: left;
+    justify-content: right;
     gap: 15px;
     width: 32vw;
+    margin-right: 75px;
 }
 
 #content {
     display: grid;
     grid-column: 2/-1;
     grid-row: 2/-1;
+    grid-template-columns: 4fr 1fr;
+}
+
+#contentMain {
+    display: grid;
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#contentSide {
+    display: flex;
 }
