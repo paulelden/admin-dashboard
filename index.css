@@ -314,7 +314,7 @@ a {
 #contentSide {
     display: grid;
     margin-right: 50px;
-    gap: 20px;
+    gap: 80px;
 }
 
 #contentSide > div {
@@ -322,6 +322,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 15px;
+    border-radius: 8px;
 }
 
 #sideContent1 {
