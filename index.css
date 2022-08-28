@@ -312,5 +312,27 @@ a {
 }
 
 #contentSide {
-    display: flex;
+    display: grid;
+    margin-right: 50px;
+    gap: 20px;
+}
+
+#contentSide > div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+#sideContent1 {
+
+}
+
+#sideContent2 {
+    background-color: var(--main-color);
+    color: white;
+}
+
+#sideContent3 {
+
 }
