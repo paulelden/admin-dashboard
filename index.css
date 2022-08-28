@@ -40,7 +40,30 @@ a {
 
 /* CLASSES */
 
+.headerButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 12vw;
+    max-width: 250px;
+    height: 5vh;
+    color: white;
+    background-color: #14591D;
+    border: solid black 3px;
+    font-size: calc(10px + 0.8vw);
+    font-family: var(--fontMain), sans-serif;
+    font-weight: 500;
+}
 
+.headerButton:hover {
+
+}
+
+.headerButton > img {
+    width: 1.8vw;
+    height: 1.8vw;
+}
 
 /* IDs */
 
@@ -259,6 +282,15 @@ a {
     border: none;
     position: absolute;
     left: 10px;
+}
+
+#headerButtonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    justify-self: left;
+    gap: 15px;
+    width: 32vw;
 }
 
 #content {
