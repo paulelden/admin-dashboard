@@ -11,26 +11,30 @@
     <div id="baseContainer">
         <div id="sidebar">
             <div id="cornerControls">
-                <a href="./index.html" id="home"><img src="./media/CorpusLogo.png" alt="" id="corpusLogo"></a>
-                <h1 id="logoText">CORPUS COMMAND</h1>
+                <a href="./index.html" id="home"><img src="./media/CorpusLogo.png" alt="" id="corpusLogo"><h1 id="logoText">CORPUS COMMAND</h1></a>
+                
                 <!-- <div id="sidebarCollapser">
                     <button id="collapseButton"><img src="./media/icons/minus-circle.svg" alt="Collapse the sidebar" id="minusCircle"></button>
                 </div> -->
             </div>
             <div id="sidebarMenu">
-                <a href="">Link 1</a>
-                <a href="">Link 2</a>
-                <a href="">Link 3</a>
-                <a href="">Link 4</a>
-                <a href="">Link 5</a>
+                <a href=""><img src="./media/icons/user.svg">Users</a>
+                <a href=""><img src="./media/icons/users.svg">Groups</a>
+                <a href=""><img src="./media/icons/cpu.svg">Devices</a>
+                <a href=""><img src="./media/icons/settings.svg">Settings</a>
+                <a href=""><img src="./media/icons/book-open.svg">Knowledge</a>
+                <a href=""><img src="./media/icons/help-circle.svg">Help</a>
             </div>
         </div>
         <div id="header">
             <p id="welcome">Welcome back, user.</p>
-            <form action="" id="searchForm">
-                <input type="text" name="searchBar" id="searchBar" placeholder="Begin typing to search">
-                <button type="submit" form="searchForm" id="searchButton"><img src="media/icons/" alt=""></button>
-            </form>
+            <div id="searchFormContainer">
+                <form action="" id="searchForm">
+                    <input type="text" name="searchBar" id="searchBar" placeholder="Begin typing to search">
+                    <button type="submit" form="searchForm" id="searchButton"><img src="media/icons/search.svg" alt="Search"></button>
+                </form>
+            </div>
+            
         </div>
         <div id="content"></div>
     </div>

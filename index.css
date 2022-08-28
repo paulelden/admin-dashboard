@@ -66,24 +66,32 @@ body {
 }
 
 #home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-row: 1/1;
-    grid-column: 1/1;
+    grid-column: 1/-1;
+    align-items: center;
+    justify-content: center;
 }
 
 #corpusLogo {
-    width: 100%;
-    height: 100%;
+    width: 5vw;
+    height: 5vw;
     display: block;
     object-fit: cover;
-    min-height: 50px;
-    min-width: 50px;
+    grid-row: 1/-1;
+    grid-column: 1/2;
 }
 
 #logoText {
     font-family: var(--fontLogo), var(--fontMain), sans-serif;
-    font-size: 1.5vw;
+    font-size: calc(8px + 1vw);
     grid-column: 2/-1;
     text-align: center;
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    color: black;
 }
 
 #sidebarCollapser {
@@ -110,28 +118,43 @@ body {
 #minusCircle {
     width: 40px;
     height: 40px;
-    stroke-width:;
 }
 
 #sidebarMenu {
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 5px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
     grid-row: 2/-1;
     grid-column: 1/-1;
+    align-items: center;
+    justify-content: center;
 }
 
 #sidebarMenu > a {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1;
     align-items: center;
     justify-content: center;
-    text-decoration: underline;
     color: black;
-    font-size: 1.8vw;
+    text-decoration: none;
+    font-size: calc(6px + 1vw);
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    text-align: left;
 }
 
 #sidebarMenu > a:hover {
     background-color: rgb(245, 230, 230);
+}
+
+#sidebarMenu > a > img {
+    height: 2vw;
+    width: 2vw;
+    display: grid;
+    grid-column: 1/1;
+    justify-self: center;
 }
 
 #header {
@@ -141,41 +164,67 @@ body {
     grid-column: 2/-1;
     grid-row: 1/2;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 #welcome {
-    font-size: calc(12px + 1vw);
+    display: grid;
+    font-size: calc(10px + 1vw);
     font-weight: 500;
     text-align: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#searchFormContainer {
+    display: grid;
+    grid-row: 2/-1;
+    grid-column: 1/2;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
 }
 
 #searchForm {
-    display: grid;
-    width: 35vw;
-    height: 3vh;
-    grid-template-columns: 7fr 1fr;
-    grid-row: 2/-1;
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     justify-self: center;
-    margin-top: -25px;
+    height: 5vh;
+    width: 35vw;
+    grid-template-columns: 7fr 1fr;
 }
 
 #searchForm > * {
     border-radius: 4px;    
-    border: solid 2px black;
+    border: solid 1px black;
 }
 
 #searchBar {
+    display: flex;
     background-color: white;
-    font-size: 1.8vw;
+    height: 100%;
+    width: 85%;
+    font-size: clamp(10px, 2.2vw, 26px);
     font-weight: 300;
-    padding: 10px;
     font-family: var(--fontMain), sans-serif;
+    padding-left: 3px;
 }
 
 #searchButton {
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
     background-color: var(--main-color);
+}
+
+#searchButton > img {
+    width: 80%;
+    height: 80%;
+    
 }
 
 #content {
