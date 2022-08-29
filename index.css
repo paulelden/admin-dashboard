@@ -64,6 +64,13 @@ a {
     height: 1.5vw;
 }
 
+.mainContent {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
 /* IDs */
 
 #baseContainer {
@@ -314,7 +321,7 @@ a {
 #contentSide {
     display: grid;
     margin-right: 50px;
-    gap: 80px;
+    gap: 50px;
 }
 
 #contentSide > div {
@@ -325,15 +332,18 @@ a {
     border-radius: 8px;
 }
 
-#sideContent1 {
+#contentSide > div > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#contentSide > div > h1 {
+    font-weight: 900;
+    font-size: calc(12px + 1.2vw);
 }
 
 #sideContent2 {
     background-color: var(--main-color);
     color: white;
-}
-
-#sideContent3 {
-
 }
