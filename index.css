@@ -68,7 +68,11 @@ a {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 10px;
+}
+
+.graph {
+    height: 27vh;
+    width: 48vh;
 }
 
 /* IDs */
