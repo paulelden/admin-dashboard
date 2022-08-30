@@ -12,15 +12,15 @@
         <div id="sidebar">
             <div id="cornerControls">
                 <a href="./index.html" id="home"><img src="./media/CorpusLogo.png" alt="" id="corpusLogo"><h1 id="logoText">CORPUS COMMAND</h1></a>
-                
-                <!-- <div id="sidebarCollapser">
-                    <button id="collapseButton"><img src="./media/icons/minus-circle.svg" alt="Collapse the sidebar" id="minusCircle"></button>
-                </div> -->
             </div>
             <div id="sidebarMenu">
                 <a href=""><img src="./media/icons/user.svg">Users</a>
                 <a href=""><img src="./media/icons/users.svg">Groups</a>
                 <a href=""><img src="./media/icons/cpu.svg">Devices</a>
+                <a href=""><img src="./media/icons/file-text.svg">Reports</a>
+                <a href=""><img src="./media/icons/download.svg">Patching</a>
+                <a href=""><img src="./media/icons/tool.svg">Configurations</a>
+                <a href=""><img src="./media/icons/grid.svg">Integrations</a>
                 <a href=""><img src="./media/icons/settings.svg">Settings</a>
                 <a href=""><img src="./media/icons/book-open.svg">Knowledge</a>
                 <a href=""><img src="./media/icons/help-circle.svg">Help</a>
@@ -39,31 +39,39 @@
             <div id="headerButtonsContainer">
                 <button type="button" class="headerButton"><img src="./media/icons/check-square.svg" alt="">Tasks</button>
                 <button type="button" class="headerButton"><img src="./media/icons/bell.svg" alt="">Alerts</button>
-                <button type="button" class="headerButton"><img src="./media/icons/grid.svg" alt="">Integrations</button>
             </div>
         </div>
         <div id="content">
+            
             <div id="contentMain">
-                <div id="mainContent1" class="mainContent"><img src="./media/graph1.jpg" alt=""  class="graph"></div>
-                <div id="mainContent2" class="mainContent"><img src="./media/graph2.jpg" alt=""  class="graph"></div>
-                <div id="mainContent2" class="mainContent"><img src="./media/graph3.jpg" alt=""  class="graph"></div>
-                <div id="mainContent2" class="mainContent"><img src="./media/graph4.jpg" alt=""  class="graph"></div>
+                <div>
+                    <p class="mainContentHeader">Device Status</p>
+                    <div class="deviceCard"></div>
+                    <div class="deviceCard"></div>
+                    <div class="deviceCard"></div>
+                    <div class="deviceCard"></div>
+                    <div class="deviceCard"></div>                        
+                </div>
+                <div>
+                    <p class="mainContentHeader">User Activity</p>
+                </div>
             </div>
+
             <div id="contentSide">
                 <div id="sideContent1" class="sideContent">
-                    <p>Active Users</p>
+                    <p>Total Alerts</p>
                     <hr>
-                    <h1>42</h1>
+                    <h1>52</h1>
                 </div>
                 <div id="sideContent2" class="sideContent">
-                    <p>Out-of-Date Devices</p>
+                    <p>Critical Alerts</p>
                     <hr>
-                    <h1>42</h1>
+                    <h1>7</h1>
                 </div>
                 <div id="sideContent3" class="sideContent">
-                    <p>This is placeholder text.</p>
+                    <p>Open Tasks</p>
                     <hr>
-                    <h1>42</h1>
+                    <h1>19</h1>
                 </div>
             </div>
         </div>

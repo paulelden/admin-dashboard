@@ -2,7 +2,7 @@
 
 :root {
     --main-color: #660019;
-    --accent-color1: #FFEBF0;
+    --accent-color: #dcc8c8;
     --backgroundColor: #a9a9a9;
     --paneColor: #fffafa;
     --fontMain: 'Red Hat Display';
@@ -44,7 +44,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 10px;
+    border-radius: 6px;
     width: 10vw;
     height: 4vh;
     color: black;
@@ -56,23 +56,41 @@ a {
 }
 
 .headerButton:hover {
-    background-color: rgb(120, 206, 150);
+    background-color: #dcc8c8;
 }
 
 .headerButton > img {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.4vw;
+    height: 1.4vw;
+    min-width: 25px;
+    min-height: 25px;
 }
 
 .mainContent {
-    display: flex;
-    align-content: center;
+    display: grid;
+    align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    width: 90%;
+    height: auto;
 }
 
-.graph {
-    height: 27vh;
-    width: 48vh;
+.mainContentHeader {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--paneColor);
+}
+
+.deviceCard {
+    display: flex;
+    background-color: #6C7290;
+    width: 15%;
+    height: 60%;
+    border-radius: 10px;
 }
 
 /* IDs */
@@ -96,16 +114,16 @@ a {
     display: grid;
     grid-column: 1/1;
     grid-row: 1/-1;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 1fr 9fr;
 }
 
 #cornerControls {
     display: grid;
     grid-row: 1/2;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     padding: 5px;
 }
 
@@ -140,35 +158,9 @@ a {
     margin-left: -8px;
 }
 
-#sidebarCollapser {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-
-#collapseButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    border: transparent;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
-
-#collapseButton:hover {
-    background-color: rgb(226, 225, 225);
-}
-
-#minusCircle {
-    width: 40px;n
-    height: 40px;
-}
-
 #sidebarMenu {
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-template-columns: 1fr;
     grid-row: 2/-1;
     grid-column: 1/-1;
@@ -183,7 +175,7 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: calc(8px + 0.8vw);
+    font-size: calc(8px + 0.6vw);
     font-weight: 500;
     height: 100%;
     width: 100%;
@@ -191,12 +183,12 @@ a {
 }
 
 #sidebarMenu > a:hover {
-    background-color: rgb(245, 230, 230);
+    background-color: var(--accent-color);
 }
 
 #sidebarMenu > a > img {
-    height: 1.5vw;
-    width: 1.5vw;
+    height: 1.4vw;
+    width: 1.4vw;
     min-width: 25px;
     min-height: 25px;
     display: grid;
@@ -229,10 +221,12 @@ a {
     gap: 2vw;
     margin-right: 75px;
     width: 15vw;
+    padding: 5px;
+    border-radius: 6px;
 }
 
 #userContainer:hover {
-    background-color: rgb(245, 230, 230);
+    background-color: var(--accent-color);
 }
 
 #userName {
@@ -309,23 +303,39 @@ a {
     display: grid;
     grid-column: 2/-1;
     grid-row: 2/-1;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 7fr 1fr;
 }
 
 #contentMain {
     display: grid;
     grid-row: 1/-1;
     grid-column: 1/2;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#contentMain > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #141414;
+    border: solid 1px #141414;
+    border-radius: 6px;
+    height: 90%;
+    width: 95%;
+    position: relative;
+    justify-self: center;
+    box-shadow: 5px 5px 5px gray;
 }
 
 #contentSide {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-right: 50px;
-    gap: 50px;
+    gap: 100px;
 }
 
 #contentSide > div {
@@ -349,5 +359,5 @@ a {
 
 #sideContent2 {
     background-color: var(--main-color);
-    color: white;
+    color: var(--paneColor);
 }
