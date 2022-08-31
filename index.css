@@ -127,9 +127,10 @@ a {
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    width: 93%;
+    width: 95%;
     gap: 20px;
     border: solid 3px black;
+    border-left: none;
     border-radius: 5px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -153,11 +154,23 @@ a {
 
 .statusIndicator {
     height: 100%;
-    width: 7%;
+    width: 5%;
     border: none;
     border: solid 3px black;
+    border-right: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.userCard {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 66%;
+    box-shadow: 5px 5px 5px gray;
+    margin-top: 30px;
+    border: solid 3px black;
+    border-radius: 5px;
 }
 
 /* IDs */
@@ -397,23 +410,6 @@ a {
     position: relative;
     justify-self: center;
 }
-
-#card1 {
-
-}
-
-#card2 {
-
-}
-
-#card3 {
-
-}
-
-#card4 {
-
-}
-
 
 #contentSide {
     display: flex;
