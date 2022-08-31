@@ -45,15 +45,55 @@
             
             <div id="contentMain">
                 <div>
-                    <p class="mainContentHeader">Device Status</p>
-                    <div class="deviceCard"></div>
-                    <div class="deviceCard"></div>
-                    <div class="deviceCard"></div>
-                    <div class="deviceCard"></div>
-                    <div class="deviceCard"></div>                        
+                    <div class="mainContentHeader">
+                        <p>Device Debrief</p>
+                        <button class="dashboardControl">
+                            <img src="./media/icons/settings.svg" alt="">
+                        </button>
+                    </div>
+                    
+                    
+                    <div class="deviceCard" id="card1">
+                        <div class="statusIndicator" style="background-color: green;"></div>
+                        <div class="cardInfo">
+                            <p>Live Connections</p>
+                            <hr>
+                            <h1>803/880</h1>
+                        </div>
+                    </div>
+                    <div class="deviceCard" id="card2">
+                        <div class="statusIndicator" style="background-color: green;"></div>
+                        <div class="cardInfo">
+                            <p>Updates in Progress</p>
+                            <hr>
+                            <h1>19</h1>
+                        </div>
+                    </div>
+                    <div class="deviceCard" id="card3">
+                        <div class="statusIndicator" style="background-color: yellow;"></div>
+                        <div class="cardInfo">
+                            <p>Out-of-Date Devices</p>
+                            <hr>
+                            <h1>152</h1>
+                        </div>
+                    </div>
+                    <div class="deviceCard" id="card4" >
+                        <div class="statusIndicator" style="background-color: red;"></div>
+                        <div class="cardInfo"> 
+                            <p>Security Detections</p>
+                            <hr>
+                            <h1>52</h1>
+                        </div>
+
+                    </div>    
                 </div>
                 <div>
-                    <p class="mainContentHeader">User Activity</p>
+                    <div class="mainContentHeader">
+                        <p>User Debrief</p>
+                        <button type="button" class="dashboardControl">
+                            <img src="./media/icons/settings.svg" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
 

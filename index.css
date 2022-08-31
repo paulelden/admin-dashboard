@@ -38,6 +38,7 @@ a {
     text-decoration: none;
 }
 
+
 /* CLASSES */
 
 .headerButton {
@@ -77,21 +78,86 @@ a {
 }
 
 .mainContentHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     position: absolute;
     top: 2%;
     left: 2%;
+}
+
+.mainContentHeader > p {
     text-decoration: underline;
     font-weight: 500;
     color: black;
 }
 
+.dashboardControl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px black;
+    border-radius: 5px;
+    background-color: var(--paneColor);
+    width: 1.6vw;
+    height: 1.6vw;
+}
+
+.dashboardControl:hover {
+    background-color: var(--accent-color);
+}
+
+.dashboardControl > img {
+    height: 80%;
+    width: 80%;
+}
+
 .deviceCard {
     display: flex;
-    background-color: var(--main-color);
-    width: 15%;
-    height: 60%;
-    border-radius: 10px;
+    align-items: center;
+    width: 20%;
+    height: 66%;
     box-shadow: 5px 5px 5px gray;
+    margin-top: 30px;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 93%;
+    gap: 20px;
+    border: solid 3px black;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.cardInfo > p {
+    font-size: calc(8px + 0.8vw);
+    font-weight: 600;
+}
+
+.cardInfo > h1 {
+    font-size: calc(10px + 1.2vw);
+}
+
+.cardInfo > hr {
+    background-color: black;
+    width: 80%;
+    height: 3px;
+    border: solid 1px black;
+}
+
+.statusIndicator {
+    height: 100%;
+    width: 7%;
+    border: none;
+    border: solid 3px black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 /* IDs */
@@ -328,6 +394,23 @@ a {
     justify-self: center;
 }
 
+#card1 {
+
+}
+
+#card2 {
+
+}
+
+#card3 {
+
+}
+
+#card4 {
+
+}
+
+
 #contentSide {
     display: flex;
     flex-direction: column;
@@ -340,7 +423,7 @@ a {
 #contentSide > div {
     display: grid;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
     padding: 15px;
     border-radius: 8px;
 }
