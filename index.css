@@ -74,7 +74,7 @@ a {
     border-radius: 5px;
     background-color: var(--accent-color);
     width: 90%;
-    height: auto;
+    height: auto;    
 }
 
 .mainContentHeader {
@@ -82,13 +82,14 @@ a {
     align-items: center;
     gap: 10px;
     position: absolute;
-    top: 2%;
-    left: 2%;
+    top: 1%;
+    left: 1%;
 }
 
 .mainContentHeader > p {
     text-decoration: underline;
-    font-weight: 500;
+    font-size: calc(8px + 0.6vw);
+    font-weight: 600;
     color: black;
 }
 
@@ -96,8 +97,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 3px black;
-    border-radius: 5px;
+    border: none;
     background-color: var(--paneColor);
     width: 1.6vw;
     height: 1.6vw;
@@ -105,6 +105,7 @@ a {
 
 .dashboardControl:hover {
     background-color: var(--accent-color);
+    border-radius: 5px;
 }
 
 .dashboardControl > img {
@@ -117,8 +118,9 @@ a {
     align-items: center;
     width: 20%;
     height: 66%;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 0 0 5px 1px gray;
     margin-top: 30px;
+    border-radius: 10px;
 }
 
 .cardInfo {
@@ -127,37 +129,37 @@ a {
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    width: 95%;
+    width: 96%;
     gap: 20px;
-    border: solid 3px black;
-    border-left: none;
     border-radius: 5px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
 
+.cardInfo > * {
+    color: black;
+}
+
 .cardInfo > p {
     font-size: calc(8px + 0.8vw);
-    font-weight: 700;
+    font-weight: 500;
+    color: black;
 }
 
 .cardInfo > h1 {
-    font-size: calc(10px + 1.2vw);
+    font-size: calc(8px + 1.2vw);
 }
 
 .cardInfo > hr {
     background-color: black;
+    border: none;
     width: 80%;
-    height: 3px;
-    border: solid 1px black;
+    height: 2px;
 }
 
 .statusIndicator {
     height: 100%;
-    width: 5%;
-    border: none;
-    border: solid 3px black;
-    border-right: none;
+    width: 4%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -165,12 +167,16 @@ a {
 .userCard {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 40%;
     height: 66%;
-    box-shadow: 5px 5px 5px gray;
-    margin-top: 30px;
-    border: solid 3px black;
-    border-radius: 5px;
+    margin-top: 60px;
+}
+
+.userContent {
+    width: 95%;
+    min-width: 320px;
+    height: auto;
 }
 
 /* IDs */
@@ -403,10 +409,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: solid 3px #141414;
-    border-radius: 6px;
-    height: 90%;
-    width: 95%;
+    height: 95%;
+    width: 97%;
     position: relative;
     justify-self: center;
 }
