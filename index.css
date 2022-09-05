@@ -47,11 +47,11 @@ a {
     justify-content: space-evenly;
     border-radius: 6px;
     width: 10vw;
-    height: 4vh;
+    height: 3vh;
     color: black;
     background: var(--paneColor);
     border: none;
-    font-size: calc(8px + 0.8vw);
+    font-size: calc(6px + 0.8vw);
     font-family: var(--fontMain), sans-serif;
     font-weight: 500;
 }
@@ -168,13 +168,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    height: 66%;
-    margin-top: 60px;
+    width: 45%;
+    height: 55%;
 }
 
 .userContent {
-    width: 95%;
+    width: 100%;
     min-width: 320px;
     height: auto;
 }
@@ -186,7 +185,7 @@ a {
     width: 99vw;
     display: grid;
     grid-template-columns: 1fr 7fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 11fr;
     gap: 10px;
 }
 
@@ -224,8 +223,8 @@ a {
 }
 
 #corpusLogo {
-    width: calc(8px + 4vw);
-    height: calc(8px + 4vw);
+    width: calc(8px + 3vw);
+    height: calc(8px + 3vw);
     display: block;
     object-fit: cover;
     grid-row: 1/-1;
@@ -261,7 +260,7 @@ a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: calc(8px + 0.6vw);
+    font-size: calc(8px + 0.5vw);
     font-weight: 500;
     height: 100%;
     width: 100%;
@@ -290,13 +289,13 @@ a {
     grid-row: 1/2;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 #welcome {
     display: grid;
     grid-row: 1/2;
     grid-column: 1/2;
+    font-size: calc(8px + 0.8vw);
 }
 
 #userContainer {
@@ -306,8 +305,8 @@ a {
     justify-self: right;
     gap: 2vw;
     margin-right: 75px;
+    margin-top: 5px;
     width: 15vw;
-    padding: 5px;
     border-radius: 6px;
 }
 
@@ -322,6 +321,7 @@ a {
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    font-size: calc(10px + 0.8vw);
 }
 
 #userImage {
@@ -333,8 +333,8 @@ a {
     background-color: var(--main-color);
     border: solid black 4px;
     border-radius: 100%;
-    height: 3vw;
-    width: 3vw;
+    height: 2.5vw;
+    width: 2.5vw;
     min-width: 50px;
     min-height: 50px;
 }
@@ -346,7 +346,7 @@ a {
     align-items: center;
     justify-content: center;
     justify-self: center;
-    height: 5vh;
+    height: 4vh;
     width: 35vw;
     grid-template-columns: 7fr 1fr;
     position: relative;
@@ -362,14 +362,14 @@ a {
     background-color: white;
     height: 100%;
     width: 100%;
-    font-size: clamp(10px, 2.2vw, 26px);
+    font-size: calc(8px + 0.8vw);
     font-weight: 300;
     font-family: var(--fontMain), sans-serif;
     padding-left: 55px;
 }
 
 #searchBar:focus {
-    border: solid 5px var(--main-color);
+    border: solid 3px var(--main-color);
 }
 
 #searchIcon {
@@ -402,7 +402,7 @@ a {
     grid-column: 1/2;
     align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
 }
 
 #contentMain > div {
@@ -415,6 +415,8 @@ a {
     justify-self: center;
 }
 
+#barGraph {
+}
 #contentSide {
     display: flex;
     flex-direction: column;
